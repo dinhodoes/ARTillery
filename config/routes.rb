@@ -1,10 +1,19 @@
 Rails.application.routes.draw do
 
   root 'sessions#new'
-  # get 'sessions/new' => 'sessions#new'
-  # post 'sessions/new' => 'sessions#create'
+
   resources :sessions
   resources :users
+
+  get '/instagram' => 'instagram#instagram'
+  get '/instagram/feed' => 'instagram#feed', as: :feed
+  post '/instagram/search' => 'instagram#search', as: :search
+
+  get '/rekognize/detect' => 'rekognize#face_detect'
+  get '/rekognize/add' => 'rekognize#face_add'
+  get '/rekognize/train' => 'rekognize#face_train' 
+  get '/rekognize/face' => 'rekognize#face_recog'
+  get '/rekognize/scene' => 'rekognize#scene_match'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/pivotal/jasmine-gem.git
-  revision: b4093b1f8d2ff629d919056d77389487c69957cc
+  revision: 54c36bf71686f35b6c29e3c0cf3459b08be52325
   specs:
-    jasmine (2.0.2)
+    jasmine (2.0.3)
       jasmine-core (~> 2.0.0)
       phantomjs
       rack (>= 1.2.1)

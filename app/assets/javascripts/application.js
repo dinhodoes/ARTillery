@@ -9,8 +9,23 @@
 //
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
-//
+//= require bootstrap
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
-//= require_tree .
+//= require_tree 
+
+
+
+// $(document).ready(function(){
+
+// 	$.getJSON('https://api.instagram.com/v1/tags/coffee/media/recent?', function(igResults){
+
+// 		console.log(igResults);
+// 	})
+
+
+// });
+
+for (var i = inputList.length - 1; i >= 0; i--) {
+    $(inputList[i]).prettyCheckable();
+}

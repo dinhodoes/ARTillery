@@ -1,0 +1,2 @@
+module RekognizeHelper
+end
