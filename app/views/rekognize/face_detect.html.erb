@@ -1,9 +1,7 @@
-<%= @detect %>
 
-<br>
-
-<%= @imageUrlString %>
 
 <%= @array.each do |element| %>
-<%= element %>
+
+	<%= image_tag element["url"] %>
+	<%= element["face_detection"] %>
 <% end %>
