@@ -51,8 +51,6 @@ gem 'instagram'
 # rekognition
 gem 'rekognize'
 
-gem 'rails_12factor', group: :production
-
 gem 'httparty'
 
 gem 'bootstrap-sass'
