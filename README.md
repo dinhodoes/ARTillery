@@ -12,5 +12,5 @@ All you would need is an Instagram account to get started!
 Coming Soon
 -----------
 
-Facial and scenic recognition to really improve searching capabilities.
+Facial and scenic recognition to really improve searching capabilities through the Rekognition API.
 
