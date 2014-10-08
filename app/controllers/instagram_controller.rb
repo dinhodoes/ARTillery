@@ -8,7 +8,7 @@ class InstagramController < ApplicationController
 		 {body:{client_id: ENV["IG_CLIENT_ID"],
 		  client_secret: ENV["IG_CLIENT_SECRET"],
 		  grant_type:'authorization_code',
-		  redirect_uri:'http://art-illery.herokuapp.com/',
+		  redirect_uri:'http://localhost:3000/instagram',
 		  code: params[:code]}})
 		redirect_to feed_path(acc_token: res.parsed_response["access_token"])
 	end

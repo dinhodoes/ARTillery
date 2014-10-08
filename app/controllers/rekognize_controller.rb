@@ -5,9 +5,9 @@ class RekognizeController < ApplicationController
 		@stuff = []
 		@photos = Photo.all
 		@photos.each do |p|
-		@stuff.push(p.url)
+			@stuff.push(p.url)
 		end
-		# @stuff = Photo.find_by_sql("SELECT url FROM photos;")
+		@stuff = Photo.find_by_sql("SELECT url FROM photos;")
 		@stuff.each do |url|
 			@array.push(HTTParty.post("http://rekognition.com/func/api/",
 				{body:{api_key: ENV["REK_API_KEY"],

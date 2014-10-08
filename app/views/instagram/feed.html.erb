@@ -51,7 +51,7 @@
 					<% if %>
 						<% @feed["data"].each do |post| %>
 						<div class="imgblock pull-left">
-							<%= link_to post["link"] do %>	s
+							<%= link_to post["link"] do %>
 								<%= image_tag post["images"]["thumbnail"]["url"] %><% end %>
 							<% if post["caption"] %>
 								<%= post["caption"]["from"]["full_name"] %>
