@@ -7,7 +7,7 @@ Artillery is an application designed to make searching for photos easier. Origin
 Install
 -------
 
-All you would need is an Instagram account to get started!
+Just a git pull and a bundle install to get this up and running. Other than that, all you would need is an Instagram account to access your own pictures!
 
 Coming Soon
 -----------
