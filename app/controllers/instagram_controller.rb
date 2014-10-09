@@ -5,8 +5,8 @@ class InstagramController < ApplicationController
 	def instagram
 		# Find the access token
 		res = HTTParty.post("https://instagram.com/oauth/access_token/",
-		 {body:{client_id: ENV["IG_CLIENT_ID"],
-		  client_secret: ENV["IG_CLIENT_SECRET"],
+		 {body:{client_id: ENV["IG_id"],
+		  client_secret: ENV["IG_secret"],
 		  grant_type:'authorization_code',
 		  redirect_uri:'http://localhost:3000/instagram',
 		  code: params[:code]}})
